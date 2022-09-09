@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>Predict Iris with dicesion Tree</h1>
+<form action="{{ url_for('predict')}}" method="POST">
+	<input type="text" name="sepalLength" placeholder="sepalLength">
+	<input type="text" name="sepalWidth" placeholder="sepalWidth">
+	<input type="text" name="petalLength" placeholder="petalLength">
+	<input type="text" name="petalWidth" placeholder="petalWidth">
+	
+	<a href='{{url_for("predict")}}'><button type="submit">submit</button></a>
+</form>
+</body>
+</html>
